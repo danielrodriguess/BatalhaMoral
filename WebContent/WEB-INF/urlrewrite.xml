@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <!DOCTYPE urlrewrite
+        PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite3.0.dtd">
+
+    <urlrewrite>
+            <rule>
+           <from>/candidato/(.*)/(.*)$</from>
+           <to>/candidato?acao=$2&amp;idd=$1</to>
+        </rule>
+        <rule>
+           <from>/candidato/(.*)$</from>
+           <to>/candidato?acao=histo&amp;idd=$1</to>
+        </rule>
+    </urlrewrite>
+   
+    
